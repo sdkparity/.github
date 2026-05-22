@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a reproducible issue in a public SDK Parity project.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, private infrastructure details, customer data, or unreleased internal plans.
+  - type: input
+    id: package
+    attributes:
+      label: Package or example
+      description: Which SDK Parity package, command, or example is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: Include the smallest public spec, command, or code sample that reproduces the issue.
+    validations:
+      required: true
